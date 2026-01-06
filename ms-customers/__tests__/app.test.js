@@ -17,7 +17,7 @@ describe('Health endpoint', () => {
     it('GET /health should return status OK', async () => {
         const res = await request(app).get('/health');
         expect(res.statusCode).toBe(200);
-        expect(res.body).toEqual({ status: 'OK' });
+        expect(res.body).toEqual({ status: 'OK!' });
     });
 });
 
